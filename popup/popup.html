@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>小鸡发财去水印批量下载助手v1.0.2</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="popup-container">
+    <header class="popup-header">
+      <div class="logo-box"><img src="../icons/icon48.png" alt="logo" /></div>
+      <div class="header-text">
+        <div class="header-title-row">
+          <h3>小鸡发财去水印批量下载助手</h3>
+          <span class="version-tag">v1.0.2</span>
+        </div>
+        <p class="subtitle">小红书网页端批量下载无水印原图与视频</p>
+      </div>
+    </header>
+
+    <div class="status-card" id="status-card">
+      <div class="status-indicator ready" id="status-dot"></div>
+      <div class="status-info">
+        <div class="status-title" id="status-title">正在检测当前页面...</div>
+        <div class="status-desc" id="status-desc">请在小红书网页端使用</div>
+      </div>
+    </div>
+
+    <div class="features-list">
+      <div class="feature-item">
+        <span class="feature-icon">✨</span>
+        <div class="feature-text">
+          <strong>100% 官方无水印原图/视频</strong>
+          <span>直连 CDN 原图通道，彻底剥离水印与裁剪参数</span>
+        </div>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">📁</span>
+        <div class="feature-text">
+          <strong>按博主自动归档独立文件夹</strong>
+          <span>自动创建归档目录，一个博主一个文件夹</span>
+        </div>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">🖼️</span>
+        <div class="feature-text">
+          <strong>照片强制转码为标准 JPG 格式</strong>
+          <span>内置 Canvas 引擎，兼容所有看图软件与设备</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-actions">
+      <button id="btn-open-xhs" class="btn-primary">打开小红书网页版</button>
+      <button id="btn-open-downloads" class="btn-secondary">打开浏览器下载目录</button>
+    </div>
+
+    <footer class="popup-footer">
+      <div class="tip-text">提示：进入博主主页后，点击右下角悬浮按钮即可开始批量下载</div>
+      <div class="copyright-box">
+        <span class="copyright-icon">🛡️</span> 版权所有 · 微信：<strong>-4555-</strong>
+      </div>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

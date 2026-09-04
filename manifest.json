@@ -1,0 +1,60 @@
+{
+  "manifest_version": 3,
+  "name": "小鸡发财去水印批量下载助手v1.0.2",
+  "version": "1.0.2",
+  "description": "小红书网页端批量下载无水印原图与视频，按博主自动归档独立文件夹，照片强制转为标准JPG格式。微信：-4555-",
+  "permissions": [
+    "downloads",
+    "storage",
+    "activeTab",
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "*://*.xiaohongshu.com/*",
+    "*://*.xhscdn.com/*",
+    "*://ci.xiaohongshu.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.xiaohongshu.com/*"
+      ],
+      "js": [
+        "content/image_converter.js",
+        "content/content.js"
+      ],
+      "css": [
+        "content/style.css"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "content/inject.js",
+        "icons/*"
+      ],
+      "matches": [
+        "*://*.xiaohongshu.com/*"
+      ]
+    }
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "小鸡发财去水印批量下载助手v1.0.2",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
